@@ -3,14 +3,17 @@
   padding: 0;
 }
 body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.wrapper {
+  width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
-  padding: 0 2rem;
 }
-
 .accordion {
   width: 500px;
 }
@@ -27,24 +30,62 @@ body {
   cursor: pointer;
 }
 .answer {
-  padding: .6rem 0;
+  padding: 0.6rem 0;
   color: #fff;
   height: auto;
 }
 .btn {
   display: block;
   margin: 0 auto;
-  margin-bottom: .8rem;
-  padding: .4rem .8rem;
+  margin-bottom: 0.8rem;
+  padding: 0.4rem 0.8rem;
   background-color: #fff;
-  color:rgb(46, 0, 34) ;
+  color: rgb(46, 0, 34);
   cursor: pointer;
   outline: none;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   border: 1px solid rgb(46, 0, 34);
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-.btn:hover{
+.btn:hover {
   background-color: rgb(46, 0, 34);
   color: #fff;
+}
+
+/* BG COLOR CHANGER STYLES */
+.bgColor-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(46, 0, 34);
+}
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: -2rem; */
+}
+.btn-wrapper button{
+  margin: 0.8rem 0;
+  padding: 0.4rem 0.8rem;
+  background-color: #fff;
+  color: rgb(46, 0, 34);
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.3rem;
+  border: 1px solid rgb(46, 0, 34);
+  margin-right: .2rem;
+}
+.btn-wrapper button:hover {
+  background-color: rgb(46, 0, 34);
+  color: #fff;
+}
+.color {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  margin-top: 10rem;
 }
