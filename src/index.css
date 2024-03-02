@@ -1,7 +1,50 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+body {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.accordion {
+  width: 500px;
+}
+.item {
+  background: rgb(46, 0, 34);
+  margin-bottom: 0.6rem;
+  padding: 0.5rem 1rem;
+}
+.question {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.answer {
+  padding: .6rem 0;
+  color: #fff;
+  height: auto;
+}
+.btn {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: .8rem;
+  padding: .4rem .8rem;
+  background-color: #fff;
+  color:rgb(46, 0, 34) ;
+  cursor: pointer;
+  outline: none;
+  border-radius: .3rem;
+  border: 1px solid rgb(46, 0, 34);
+  transition: .3s ease-in-out;
+}
+.btn:hover{
+  background-color: rgb(46, 0, 34);
+  color: #fff;
 }
