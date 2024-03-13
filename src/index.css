@@ -89,3 +89,16 @@ body {
   text-align: center;
   margin-top: 10rem;
 }
+/* STAR RATING */
+.star-rating{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.star-rating .active{
+  color: #fff700;
+}
+/* .star-rating .inactive{
+  color: #fff700;
+} */
